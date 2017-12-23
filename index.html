@@ -161,7 +161,7 @@ Soil creeps imperceptibly downhill, but also fails catastrophically to create la
 </a> 		<img src="fig-slow-fast-slips.png" alt="fig-slow-fast-slips.png" /><br />
 
 <div class="p"><!----></div>
-<div class="small">&#8593; Landslide and creep phenomenology. (A) Rapid landslide in San Salvador, El Salvador; and (B) Slow earthflow in Osh, Kyrgyzstan. (C) Ranges of surface velocities observed for various types of slow and rapid landslides. The datapoints in red, brown, magenta, and green correspond to the observations reported or documented by Cruden &amp; Varnes (1996)[<a href="#cruden1996landslides" id="CITEcruden1996landslides" class="tth_citation">5</a>], Hungr et al. (2001)[<a href="#hungr2001review" id="CITEhungr2001review" class="tth_citation">6</a>], Hilley et al, (2004)[<a href="#hilley2004dynamics" id="CITEhilley2004dynamics" class="tth_citation">7</a>], and Saunders &amp; Young (1983)[<a href="#saunders1983rates" id="CITEsaunders1983rates" class="tth_citation">8</a>], respectively. (D) Schematic cross section of a soil-mantled hillslope. Photo credits: (A) Associated Press/Wide World Photos, (B) Joachim Lent.
+<div class="small">&#8593; Landslide and creep phenomenology. (A) Rapid landslide in San Salvador, El Salvador; and (B) Slow earthflow in Osh, Kyrgyzstan. (C) Ranges of surface velocities observed for various types of slow and rapid landslides. The datapoints in red, brown, magenta, and green correspond to the observations reported or documented by <a href="#cruden1996landslides" id="CITEcruden1996landslides" class="tth_citation">&nbsp;Cruden and Varnes, [1996</a>], <a href="#hungr2001review" id="CITEhungr2001review" class="tth_citation">&nbsp;Hungr et&nbsp;al., [2001</a>], <a href="#hilley2004dynamics" id="CITEhilley2004dynamics" class="tth_citation">&nbsp;Hilley et&nbsp;al., [2004</a>], and<a href="#saunders1983rates" id="CITEsaunders1983rates" class="tth_citation">&nbsp;Saunders and Young, [1983</a>], respectively. (D) Schematic cross section of a soil-mantled hillslope. Photo credits: (A) Associated Press/Wide World Photos, (B) Joachim Lent.
 </div>
 <div class="p"><!----></div>
 <br />
@@ -186,7 +186,89 @@ Soil creeps imperceptibly downhill, but also fails catastrophically to create la
 <h3><i><div class="normalsize">c) Physics of rate- and state-dependent friction laws for fault gouge (2015-present)</div></i></h3>
 
 <div class="p"><!----></div>
-Numerical simulations of earthquake nucleation rely on constitutive rate and state evolution laws to model earthquake initiation and propagation processes. The response of different state evolution laws to large velocity increases is an important feature of these constitutive relations that can significantly change the style of earthquake nucleation in numerical models. However, currently there is not a rigorous understanding of the physical origins of the response of bare rock or gouge-filled fault zones to large velocity increases. This in turn hinders our ability to design physics-based friction laws that can appropriately describe those responses. We here argue that most fault zones form a granular gouge after an initial shearing phase and that it is the behavior of the gouge layer that controls the fault friction. We perform numerical experiments of a confined sheared granular gouge under a range of confining stresses and driving velocities relevant to fault zones and apply 1-3 order of magnitude velocity steps to explore dynamical behavior of the system from grain- to macro-scales. We compare our numerical observations with experimental data from biaxial double-direct-shear fault gouge experiments under equivalent loading and driving conditions. Our intention is to first investigate the degree to which these numerical experiments, with Hertzian normal and Coulomb friction laws at the grain-grain contact scale and without any time-dependent plasticity, can reproduce experimental fault gouge behavior. We next compare the behavior observed in numerical experiments with predictions of the Dieterich (Aging) and Ruina (Slip) friction laws. Finally, the numerical observations at the grain and meso-scales will be used for designing a rate and state evolution law that takes into account recent advances in rheology of granular systems, including local and non-local effects [<a href="#DeGiuli15082017" id="CITEDeGiuli15082017" class="tth_citation">9</a>,<a href="#zhang2017microscopic" id="CITEzhang2017microscopic" class="tth_citation">10</a>,<a href="#henann2013predictive" id="CITEhenann2013predictive" class="tth_citation">11</a>], for a wide range of shear rates and slow and fast deformation regimes of the fault gouge.
+
+Numerical simulations of earthquake nucleation rely on constitutive rate and state evolution laws to model earthquake initiation and propagation processes. In these laws, the frictional response can be written as:
+
+<div class="p"><!----></div>
+
+<br clear="all" /><table border="0" width="100%"><tr><td>
+<table align="center" cellspacing="0"  cellpadding="2"><tr><td nowrap="nowrap" align="center">
+ &#964; =  &#963;</td><td align="left" class="cl">&#x23A1;<br />&#x23A3;
+</td><td nowrap="nowrap" align="center">
+ f<sup>*</sup> + a&nbsp;&nbsp;<span class="roman">ln</span> </td><td nowrap="nowrap" align="center">
+V
+<div class="hrcomp"><hr noshade="noshade" size="1"/></div>V<sup>*</sup><br /></td><td nowrap="nowrap" align="center">
++ b&nbsp;&nbsp;<span class="roman">ln</span></td><td nowrap="nowrap" align="center">
+V<sup>*</sup>&#952;
+<div class="hrcomp"><hr noshade="noshade" size="1"/></div>D<sub>c</sub><br /></td><td align="left" class="cl">&#x23A4;<br />&#x23A6;
+</td><td nowrap="nowrap" align="center">
+</td></tr></table>
+</td><td width="1%">(1)</td></tr></table>
+
+
+
+<div class="p"><!----></div>
+where a and b in equation (1) are the coefficients of the rate-and-state "direction" and "evolution" effects, respectively, &#963; is the effective normal stress, f<sup>*</sup> and V<sup>*</sup> are reference (initial) values of the friction coefficient and sliding velocity, respectively, V is the cuirrent value of the sliding velocity, and &#952; is the "state" variable. Two empirical forms for the evolution of the state variable &#952; have been previously proposed by <a href="#ruina1983slip" id="CITEruina1983slip" class="tth_citation">&nbsp;Ruina, [1983</a>], and are used more frequently:
+
+<div class="p"><!----></div>
+
+<br clear="all" /><table border="0" width="100%"><tr><td>
+<table align="center" cellspacing="0"  cellpadding="2"><tr><td nowrap="nowrap" align="center">
+ </td><td nowrap="nowrap" align="center">
+<div class="comp">&#8901;<br /></div>
+<div class="norm">&#952;<br /></div>
+<div class="comb">&nbsp;</div>
+</td><td nowrap="nowrap" align="center">
+ = 1 &#8722; </td><td nowrap="nowrap" align="center">
+V&#952;
+<div class="hrcomp"><hr noshade="noshade" size="1"/></div>D<sub>c</sub><br /></td><td nowrap="nowrap" align="center">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="roman">(</span><span class="roman">Aging</span> <span class="roman">law</span><span class="roman">)</span></td></tr></table>
+</td><td width="1%">(2)</td></tr></table>
+
+
+
+<div class="p"><!----></div>
+
+<br clear="all" /><table border="0" width="100%"><tr><td>
+<table align="center" cellspacing="0"  cellpadding="2"><tr><td nowrap="nowrap" align="center">
+ </td><td nowrap="nowrap" align="center">
+<div class="comp">&#8901;<br /></div>
+<div class="norm">&#952;<br /></div>
+<div class="comb">&nbsp;</div>
+</td><td nowrap="nowrap" align="center">
+ = </td><td nowrap="nowrap" align="center">
+V&#952;
+<div class="hrcomp"><hr noshade="noshade" size="1"/></div>D<sub>c</sub><br /></td><td nowrap="nowrap" align="center">
+&nbsp;&nbsp;<span class="roman">ln</span>&nbsp;&nbsp;</td><td nowrap="nowrap" align="center">
+V&#952;
+<div class="hrcomp"><hr noshade="noshade" size="1"/></div>D<sub>c</sub><br /></td><td nowrap="nowrap" align="center">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="roman">(</span><span class="roman">Slip</span> <span class="roman">law</span><span class="roman">)</span></td></tr></table>
+</td><td width="1%">(3)</td></tr></table>
+
+
+
+<div class="p"><!----></div>
+In equations (2) and (3), D<sub>c</sub> is a characteristic slip distance. The "state" variable &#952; is designed so as  to reflect the product of the true contact area of asperities of the frictional interface and the intrinsic strength of the contacts in touch.
+
+<div class="p"><!----></div>
+
+
+
+<div class="p"><!----></div>
+<a id="tth_fIg1">
+</a> 		<img src="sliding_block.png" alt="sliding_block.png" /><br />
+
+<div class="p"><!----></div>
+<div class="small">&#8593; Phenomenology and setup.
+
+<div class="p"><!----></div>
+</div>
+
+
+
+
+
+The response of different state evolution laws to large velocity increases is an important feature of these constitutive relations that can significantly change the style of earthquake nucleation in numerical models. However, currently there is not a rigorous understanding of the physical origins of the response of bare rock or gouge-filled fault zones to large velocity increases. This in turn hinders our ability to design physics-based friction laws that can appropriately describe those responses. We here argue that most fault zones form a granular gouge after an initial shearing phase and that it is the behavior of the gouge layer that controls the fault friction. We perform numerical experiments of a confined sheared granular gouge under a range of confining stresses and driving velocities relevant to fault zones and apply 1-3 order of magnitude velocity steps to explore dynamical behavior of the system from grain- to macro-scales. We compare our numerical observations with experimental data from biaxial double-direct-shear fault gouge experiments under equivalent loading and driving conditions. Our intention is to first investigate the degree to which these numerical experiments, with Hertzian normal and Coulomb friction laws at the grain-grain contact scale and without any time-dependent plasticity, can reproduce experimental fault gouge behavior. We next compare the behavior observed in numerical experiments with predictions of the Dieterich (Aging) and Ruina (Slip) friction laws. Finally, the numerical observations at the grain and meso-scales will be used for designing a rate and state evolution law that takes into account recent advances in rheology of granular systems, including local and non-local effects [<a href="#DeGiuli15082017" id="CITEDeGiuli15082017" class="tth_citation">9</a>,<a href="#zhang2017microscopic" id="CITEzhang2017microscopic" class="tth_citation">10</a>,<a href="#henann2013predictive" id="CITEhenann2013predictive" class="tth_citation">11</a>], for a wide range of shear rates and slow and fast deformation regimes of the fault gouge.
 
 <div class="p"><!----></div>
 <br />
@@ -207,121 +289,111 @@ coming soon!
 
 
 
+
 <div class="p"><!----></div>
-<div class="footnotesize">
+<div class="small">
 <h2>References</h2>
 
 <dl>
- <dt><a href="#CITEpowell1998patterns" id="powell1998patterns">[1]</a></dt><dd>
-Powell, D.&nbsp;M.
- Patterns and processes of sediment sorting in
-  gravel-bed rivers.
- <em>Progress in Physical Geography</em>
-  <b>22</b>, 1-32 (1998).
+ <dt><a href="#CITEcruden1996landslides" id="cruden1996landslides">[Cruden and Varnes 1996]</a></dt><dd>
+David&nbsp;M Cruden and David&nbsp;J Varnes.
+ Landslides: investigation and mitigation. chapter 3-landslide types
+  and processes.
+ <em>Transportation research board special report</em>,  (247),
+  1996.
 
 <div class="p"><!----></div>
 </dd>
- <dt><a href="#CITEhoussais2015onset" id="houssais2015onset">[2]</a></dt><dd>
-Houssais, M., Ortiz, C.&nbsp;P.,
-  Durian, D.&nbsp;J. &amp; Jerolmack, D.&nbsp;J.
- Onset of sediment transport is a continuous
-  transition driven by fluid shear and granular creep.
- <em>Nature communications</em>
-  <b>6</b> (2015).
-
-<div class="p"><!----></div>
-</dd>
- <dt><a href="#CITEgray2015particlesizedensity" id="gray2015particlesizedensity">[3]</a></dt><dd>
-Gray, J. &amp; Ancey, C.
- Particle-size and-density segregation in granular
-  free-surface flows.
- <em>Journal of Fluid Mechanics</em>
-  <b>779</b>, 622-668
-  (2015).
-
-<div class="p"><!----></div>
-</dd>
- <dt><a href="#CITEgray2005theory" id="gray2005theory">[4]</a></dt><dd>
-Gray, J. &amp; Thornton, A.
- A theory for particle size segregation in shallow
-  granular free-surface flows.
- In <em>Proceedings of the Royal Society of
-  London A: Mathematical, Physical and Engineering Sciences</em>, vol.
-  461, 1447-1473
-  (The Royal Society, 2005).
-
-<div class="p"><!----></div>
-</dd>
- <dt><a href="#CITEcruden1996landslides" id="cruden1996landslides">[5]</a></dt><dd>
-Cruden, D.&nbsp;M. &amp; Varnes, D.&nbsp;J.
- Landslides: investigation and mitigation. chapter
-  3-landslide types and processes.
- <em>Transportation research board special
-  report</em>  (1996).
-
-<div class="p"><!----></div>
-</dd>
- <dt><a href="#CITEhungr2001review" id="hungr2001review">[6]</a></dt><dd>
-Hungr, O., Evans, S.,
-  Bovis, M. &amp; Hutchinson, J.
- A review of the classification of landslides of the
-  flow type.
- <em>Environmental &amp; Engineering Geoscience</em>
-  <b>7</b>, 221-238
-  (2001).
-
-<div class="p"><!----></div>
-</dd>
- <dt><a href="#CITEhilley2004dynamics" id="hilley2004dynamics">[7]</a></dt><dd>
-Hilley, G.&nbsp;E., B&#252;rgmann, R.,
-  Ferretti, A., Novali, F. &amp;
-  Rocca, F.
- Dynamics of slow-moving landslides from permanent
-  scatterer analysis.
- <em>Science</em> <b>304</b>,
-  1952-1955 (2004).
-
-<div class="p"><!----></div>
-</dd>
- <dt><a href="#CITEsaunders1983rates" id="saunders1983rates">[8]</a></dt><dd>
-Saunders, I. &amp; Young, A.
- Rates of surface processes on slopes, slope retreat
-  and denudation.
- <em>Earth Surface Processes and Landforms</em>
-  <b>8</b>, 473-501
-  (1983).
-
-<div class="p"><!----></div>
-</dd>
- <dt><a href="#CITEDeGiuli15082017" id="DeGiuli15082017">[9]</a></dt><dd>
-DeGiuli, E. &amp; Wyart, M.
+ <dt><a href="#CITEDeGiuli15082017" id="DeGiuli15082017">[DeGiuli and Wyart 2017]</a></dt><dd>
+E.&nbsp;DeGiuli and M.&nbsp;Wyart.
  Friction law and hysteresis in granular materials.
- <em>Proceedings of the National Academy of
-  Sciences</em>  (2017).
-
-  URL <a href="http://www.pnas.org/content/early/2017/08/14/1706105114.abstract"><tt>http://www.pnas.org/content/early/2017/08/14/1706105114.abstract</tt></a>.
-
-  <a href="http://www.pnas.org/content/early/2017/08/14/1706105114.full.pdf"><tt>http://www.pnas.org/content/early/2017/08/14/1706105114.full.pdf</tt></a>.
+ <em>Proceedings of the National Academy of Sciences</em>, 2017.
+ doi: 10.1073/pnas.1706105114.
+ URL
+  <tt>http://www.pnas.org/content/early/2017/08/14/1706105114.abstract</tt>.
 
 <div class="p"><!----></div>
 </dd>
- <dt><a href="#CITEzhang2017microscopic" id="zhang2017microscopic">[10]</a></dt><dd>
-Zhang, Q. &amp; Kamrin, K.
- Microscopic description of the granular fluidity
-  field in nonlocal flow modeling.
- <em>Physical Review Letters</em>
-  <b>118</b>, 058001
-  (2017).
+ <dt><a href="#CITEgray2015particlesizedensity" id="gray2015particlesizedensity">[Gray and Ancey 2015]</a></dt><dd>
+JMNT Gray and C&nbsp;Ancey.
+ Particle-size and-density segregation in granular free-surface flows.
+ <em>Journal of Fluid Mechanics</em>, 779: 622-668, 2015.
 
 <div class="p"><!----></div>
 </dd>
- <dt><a href="#CITEhenann2013predictive" id="henann2013predictive">[11]</a></dt><dd>
-Henann, D.&nbsp;L. &amp; Kamrin, K.
- A predictive, size-dependent continuum model for
-  dense granular flows.
- <em>Proceedings of the National Academy of
-  Sciences</em> <b>110</b>, 6730-6735
-  (2013).</dd>
+ <dt><a href="#CITEgray2005theory" id="gray2005theory">[Gray and Thornton 2005]</a></dt><dd>
+JMNT Gray and AR&nbsp;Thornton.
+ A theory for particle size segregation in shallow granular
+  free-surface flows.
+ In <em>Proceedings of the Royal Society of London A: Mathematical,
+  Physical and Engineering Sciences</em>, volume 461, pages 1447-1473. The Royal
+  Society, 2005.
+
+<div class="p"><!----></div>
+</dd>
+ <dt><a href="#CITEhenann2013predictive" id="henann2013predictive">[Henann and Kamrin 2013]</a></dt><dd>
+David&nbsp;L Henann and Ken Kamrin.
+ A predictive, size-dependent continuum model for dense granular
+  flows.
+ <em>Proceedings of the National Academy of Sciences</em>, 110
+  (17): 6730-6735, 2013.
+
+<div class="p"><!----></div>
+</dd>
+ <dt><a href="#CITEhilley2004dynamics" id="hilley2004dynamics">[Hilley et&nbsp;al. 2004]</a></dt><dd>
+George&nbsp;E Hilley, Roland B&#252;rgmann, Alessandro Ferretti, Fabrizio Novali, and
+  Fabio Rocca.
+ Dynamics of slow-moving landslides from permanent scatterer analysis.
+ <em>Science</em>, 304 (5679): 1952-1955, 2004.
+
+<div class="p"><!----></div>
+</dd>
+ <dt><a href="#CITEhoussais2015onset" id="houssais2015onset">[Houssais et&nbsp;al. 2015]</a></dt><dd>
+Morgane Houssais, Carlos&nbsp;P Ortiz, Douglas&nbsp;J Durian, and Douglas&nbsp;J Jerolmack.
+ Onset of sediment transport is a continuous transition driven by
+  fluid shear and granular creep.
+ <em>Nature communications</em>, 6, 2015.
+
+<div class="p"><!----></div>
+</dd>
+ <dt><a href="#CITEhungr2001review" id="hungr2001review">[Hungr et&nbsp;al. 2001]</a></dt><dd>
+Oldrich Hungr, SG&nbsp;Evans, MJ&nbsp;Bovis, and JN&nbsp;Hutchinson.
+ A review of the classification of landslides of the flow type.
+ <em>Environmental &amp; Engineering Geoscience</em>, 7
+  (3): 221-238, 2001.
+
+<div class="p"><!----></div>
+</dd>
+ <dt><a href="#CITEpowell1998patterns" id="powell1998patterns">[Powell 1998]</a></dt><dd>
+D&nbsp;Mark Powell.
+ Patterns and processes of sediment sorting in gravel-bed rivers.
+ <em>Progress in Physical Geography</em>, 22 (1):
+  1-32, 1998.
+
+<div class="p"><!----></div>
+</dd>
+ <dt><a href="#CITEruina1983slip" id="ruina1983slip">[Ruina 1983]</a></dt><dd>
+Andy Ruina.
+ Slip instability and state variable friction laws.
+ <em>Journal of Geophysical Research: Solid Earth</em>, 88
+  (B12): 10359-10370, 1983.
+
+<div class="p"><!----></div>
+</dd>
+ <dt><a href="#CITEsaunders1983rates" id="saunders1983rates">[Saunders and Young 1983]</a></dt><dd>
+Ian Saunders and Anthony Young.
+ Rates of surface processes on slopes, slope retreat and denudation.
+ <em>Earth Surface Processes and Landforms</em>, 8
+  (5): 473-501, 1983.
+
+<div class="p"><!----></div>
+</dd>
+ <dt><a href="#CITEzhang2017microscopic" id="zhang2017microscopic">[Zhang and Kamrin 2017]</a></dt><dd>
+Qiong Zhang and Ken Kamrin.
+ Microscopic description of the granular fluidity field in nonlocal
+  flow modeling.
+ <em>Physical Review Letters</em>, 118 (5): 058001,
+  2017.</dd>
 </dl>
 
 </div>
@@ -329,7 +401,7 @@ Henann, D.&nbsp;L. &amp; Kamrin, K.
 T<sub><span class="small">E</span></sub>X
 by <a href="http://hutchinson.belmont.ma.us/tth/">
 T<sub><span class="small">T</span></sub>H</a>,
-version 4.10.<br />On Nov 30, 2017, 17:08 Eastern Time Zone.</small>
+version 4.12.<br />On 23 Dec 2017, 15:44.</small>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-66942562-1"></script>
