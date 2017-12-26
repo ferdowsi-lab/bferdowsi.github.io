@@ -1,0 +1,45 @@
+
+\documentclass[12pt]{article}
+\renewcommand{\familydefault}{\sfdefault}
+\newenvironment{ppl}{\ttfamily}{\par}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{lipsum}
+\usepackage{amsmath}
+%\usepackage{apacite}
+\usepackage[round]{natbib}
+
+\begin{document}
+
+%\def\mymacro#1{{\it #1}}
+
+%\title{December 25, 2017}
+
+\section*{\large December 25, 2017}
+\vspace{-0.1 in}
+
+I just spent five hours of my Christmas Monday on installing {\bf gfortran} on MacOS High Sierra! I was getting the following error while running some simple Fortran codes for earthquake source simulations. I correctly thought it is due to some configuration problems of the latest version of gfortran --that I installed from the \href{https://gcc.gnu.org/wiki/GFortranBinariesMacOS}{GNU project}-- with recent MacOS. I was correct, it turned out that the latest releases (ver>7) of gfortran (maybe only for this particular use) is not compatible with High Sierra anymore. 
+
+\begin{ppl}
+FATAL:/opt/local/bin/../libexec/as/x86-64/as: I don't understand 'm' flag! 
+\end{ppl}
+
+A solution that I found after hours of struggle, was to install an older version {\bf gcc6.4} that with itself has {\bf gfortran6}. This could be installed via {\bf MacPorts}:
+
+\begin{ppl}
+sudo port install gcc6
+\end{ppl}
+
+and will have the following name in binaries folder: ``gfortran-mp-6''.
+
+
+%
+
+
+
+
+%\bibliographystyle{plainnat}
+%\small
+%\bibliography{library_segregation}
+\end{document} 
+  
